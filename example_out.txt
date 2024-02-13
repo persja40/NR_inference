@@ -1,0 +1,34 @@
+Using downloaded and verified file: voc_root/VOCtrainval_11-May-2012.tar
+Extracting voc_root/VOCtrainval_11-May-2012.tar to voc_root
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                                   Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg       CPU Mem  Self CPU Mem    # of Calls  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                        model_inference         2.21%     121.764ms        96.64%        5.334s        5.334s           0 b      -7.98 Gb             1  
+                                           aten::conv2d         0.00%     254.000us        76.44%        4.219s      49.637ms       3.66 Gb      -7.92 Kb            85  
+                                      aten::convolution         0.01%     721.000us        76.43%        4.219s      49.632ms       3.66 Gb       7.92 Kb            85  
+                                     aten::_convolution         0.02%     996.000us        76.42%        4.218s      49.625ms       3.66 Gb           0 b            85  
+                      aten::_nnpack_spatial_convolution        43.91%        2.424s        43.91%        2.424s     605.977ms     741.70 Mb      -4.00 Kb             4  
+                                      aten::thnn_conv2d         0.01%     311.000us        32.49%        1.793s      22.138ms       2.94 Gb           0 b            81  
+                             aten::_slow_conv2d_forward        32.01%        1.767s        32.48%        1.793s      22.135ms       2.94 Gb      -7.31 Gb            81  
+                                 torchvision::roi_align         6.99%     386.024ms         7.11%     392.178ms      98.044ms     185.42 Mb           0 b             4  
+                                       aten::batch_norm         0.00%     252.000us         4.60%     253.836ms       3.905ms       3.24 Gb           0 b            65  
+                           aten::_batch_norm_impl_index         0.01%     614.000us         4.59%     253.584ms       3.901ms       3.24 Gb           0 b            65  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+Self CPU time total: 5.520s
+
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                                   Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg       CPU Mem  Self CPU Mem    # of Calls  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                        model_inference         2.32%     129.571ms        95.78%        5.348s        5.348s           0 b      -8.04 Gb             1  
+                                           aten::conv2d         0.01%     340.000us        77.50%        4.327s      50.902ms       3.68 Gb    -117.19 Kb            85  
+                                      aten::convolution         0.01%     563.000us        77.49%        4.326s      50.897ms       3.68 Gb     117.19 Kb            85  
+                                     aten::_convolution         0.02%     924.000us        77.48%        4.326s      50.891ms       3.68 Gb           0 b            85  
+                      aten::_nnpack_spatial_convolution        45.31%        2.530s        45.31%        2.530s     632.480ms     765.62 Mb      -4.00 Kb             4  
+                                      aten::thnn_conv2d         0.01%     306.000us        32.15%        1.795s      22.159ms       2.94 Gb           0 b            81  
+                             aten::_slow_conv2d_forward        31.73%        1.772s        32.14%        1.795s      22.155ms       2.94 Gb      -5.22 Gb            81  
+                                 torchvision::roi_align         6.55%     365.491ms         6.66%     371.970ms      92.993ms     191.41 Mb           0 b             4  
+enumerate(DataLoader)#_MultiProcessingDataLoaderIter...         4.22%     235.530ms         4.22%     235.544ms     117.772ms      24.00 Mb      24.00 Mb             2  
+                                       aten::batch_norm         0.00%     246.000us         3.82%     213.369ms       3.283ms       3.27 Gb           0 b            65  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+Self CPU time total: 5.583s
+
